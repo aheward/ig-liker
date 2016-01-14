@@ -1,0 +1,9 @@
+.idea/
+*.gem
+*.log
+*test_spec.rb
+*.png
+*.lock
+*.json
+.ruby-version
+.DS_Store
