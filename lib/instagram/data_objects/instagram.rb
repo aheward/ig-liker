@@ -144,8 +144,8 @@ class InstagramObject < DataFactory
   def log_in
     @browser.link(text: 'Log in').click
     on NonClassicLogin do |page|
-      page.username.when_present.set 'paragliding_addict'
-      page.password.set '7lbcYMTMwxHEJYHjViGb'
+      page.username.when_present.set ENV['USER']
+      page.password.set ENV['PASS']
       page.log_in
     end
   end
